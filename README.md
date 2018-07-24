@@ -9,3 +9,5 @@ The third function, v_gen, accepts the stiffness and mass matrices as arguments,
 The fourth, w_gen, accepts the eigenvalues and the number of finite elements, and finds the natural frequencies of the system represented by the given arguments.
 
 The outline document contains a plan to generalize the two matrices, and a general plan.
+
+Finally, the tfe_test.m script demonstrates the use of the four functions on a hypothetical beam with likely properties for steel.
