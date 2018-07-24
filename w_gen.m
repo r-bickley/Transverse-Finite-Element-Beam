@@ -3,10 +3,10 @@ function [ W ] = w_gen( V, n )
 %V is the eigenvector solution to the K and M matrices
 %n is the number of subdivisions made in the rod
 
-W = zeros(n+1);
+W = zeros(n+1,1);
 a = 1;
-while a>=n
-    W(a) = sqrt(V(a,a));
+while a<=n
+    W(a,1) = sqrt(V(a,1));
     a = a+1;
 end
 end
