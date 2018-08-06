@@ -1,8 +1,8 @@
-function [ K ] = k_gen( E, L, m, n )
+function [ K ] = k_gen( E, L, r, n )
 %generates the k matrix
 %E = young's modulus for the material
 %L = the total length of the rod
-%m = the total mass of the rod
+%r = the cross-sectional radius of the rod
 %n = the number of subdivisions made in the rod
 
 K = zeros(n+1., n+1.);
@@ -15,5 +15,5 @@ while a<=n
     a = a+1.;
 end
 
-K = K * 3.0*E*((1./3.)*m*L^2.)/(L^3.);
+K = K * 3.0*3.14159*E*(r^4.)/(4.0*L^3.);
 end
