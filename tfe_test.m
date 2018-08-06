@@ -17,11 +17,11 @@ A = 0.1;
 %Desired number of subdivisions in the beam
 n = 4;
 
-%Calculate the mass of the beam using given quantities
-m = A*L*rho;
+%Calculate the cross-sectional radius of the beam using given quantities
+r = sqrt(A/3.14159);
 
 %Generate the stiffness matrix
-K = k_gen(E,L,m,n);
+K = k_gen(E,L,r,n);
 
 %Generate the mass matrix
 M = m_gen(rho,A,L,n);
